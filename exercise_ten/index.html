@@ -10,60 +10,98 @@
 
 </head>
 
-<body onload='document.myForm.email.focus()'>
-  <div>
-    
-    <form name="myForm" action="" >
-    <h5>FORM REGISTRATION</h5>
-    <div id='form-group'>
+<body>
+ <div class="form">
+    <h1 class="header">Registration Form</h1>
+    <div class="form-body">
+      <div class="form-top">
 
-        <!-- <div class='form-elements'>
-          <label for='login'>Login Id</label>
-          <input type='text' name='Login Id' id='login' class='form-content'> 
-        </div> -->
-
-        <div class='form-elements'>
-          <label for='email'>Email</label>
-          <input type='text' name='email' id='email' class='form-content'/>
+        <div class="row">
+          <div class="left">
+            <label>Login Id</label>
+          </div>
+          <div class="right">
+            <input name="loginId" id="loginId" type="text" />
+          </div>
         </div>
 
-        <!-- <div class='form-elements'>
-          <label for='fullName'>Name</label>
-          <input type='text' name='Name' id='fullName' class='form-content'> 
+        <div>
+          <br />
         </div>
 
-        <div class='form-elements'>
-          <label for='timezone'>Timezone</label>
-          <select name='timezone' id='timezone'>
-            <option>GMT</option>
-            <option>GMT +1</option>
-            <option>GMT +6</option>
-          </select> 
-        </div> -->
-
-        <!-- <div class='form-elements'>
-          <label for='homePage'>Home Page</label>
-          <input type='text' name='homePage' id='homePage' class='form-content'>
+        <div class="row">
+          <div class="left">
+            <label>Email</label>
+          </div>
+          <div class="right">
+            <input name="email" id="email" type="email" />
+          </div>
         </div>
 
-        <div class='form-elements'>
-          <label for='aboutMe'>About me</label>
-          <textarea name='About Me' id='aboutMe' rows='10' cols='40' class='form-content'></textarea>
-        </div>-->
+        <div>
+          <br />
+        </div>
 
-        <div class='form-elements'>
-          <input type='checkbox' id='notifyCheckBox' name="Notication checkbox">
-          <label id='notifyText'>Receive notifications of comments.</label>
-          <p id='notify'>You will be sent an email when someone posts comments to your Blog or Album.</p>
-          <p id='notify-center'>Your Password will be mailed to you.</p>
-        </div> 
+        <div class="row">
+          <div class="left">
+            <label>Name</label>
+          </div>
+          <div class="right">
+            <input name="myName" id="myName" type="text" />
+          </div>
+        </div>
 
-        <div id='button'>
-          <input type='submit' value='GO' name="submit" value="Submit" onclick="ValidateEmail(document.myForm.email)">
+        <div>
+          <br />
+        </div>
+
+        <div class="row">
+          <div class="left">
+            <label>Timezone</label>
+          </div>
+          <div class="right">
+            <select name="timezone" id="timezone">
+              <option value="GMT">GMT</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <br />
+        </div>
+
+        <div class="row">
+          <div class="left">
+            <label>Home Page</label>
+          </div>
+          <div class="right">
+            <input name="homepage" id="homepage" type="text" />
+          </div>
+        </div>
+
+        <div>
+          <br />
         </div>
 
       </div>
-    </form>
+
+      <div class="form-bottom">
+        <div>
+          <label class="single">About Me</label>
+        </div>
+        <div class="bottomInput">
+          <textarea class="textarea" id="about" rows="6"></textarea>
+          <input type="checkbox" id="notifications" /> <strong>Receive notification of comments.</strong>
+          <p class="small">
+            You will be sent an email when someone posts comments to your blog or album.
+          </p>
+          <p class="bottom">Your password will be mailed to you.</p>
+          <p class="bottom"><button id="btnGO" >GO</button></p>
+        </div>
+
+      </div>
+
+    </div>
   </div>
   <script src="validation.js"></script>
 </body>
