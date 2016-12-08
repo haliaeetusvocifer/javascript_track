@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise Ten: Form Validation Using JS</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body onload='document.myForm.email.focus()'>
+  <div>
+    
+    <form name="myForm" action="" >
+    <h5>FORM REGISTRATION</h5>
+    <div id='form-group'>
+
+        <!-- <div class='form-elements'>
+          <label for='login'>Login Id</label>
+          <input type='text' name='Login Id' id='login' class='form-content'> 
+        </div> -->
+
+        <div class='form-elements'>
+          <label for='email'>Email</label>
+          <input type='text' name='email' id='email' class='form-content'/>
+        </div>
+
+        <!-- <div class='form-elements'>
+          <label for='fullName'>Name</label>
+          <input type='text' name='Name' id='fullName' class='form-content'> 
+        </div>
+
+        <div class='form-elements'>
+          <label for='timezone'>Timezone</label>
+          <select name='timezone' id='timezone'>
+            <option>GMT</option>
+            <option>GMT +1</option>
+            <option>GMT +6</option>
+          </select> 
+        </div> -->
+
+        <!-- <div class='form-elements'>
+          <label for='homePage'>Home Page</label>
+          <input type='text' name='homePage' id='homePage' class='form-content'>
+        </div>
+
+        <div class='form-elements'>
+          <label for='aboutMe'>About me</label>
+          <textarea name='About Me' id='aboutMe' rows='10' cols='40' class='form-content'></textarea>
+        </div>-->
+
+        <div class='form-elements'>
+          <input type='checkbox' id='notifyCheckBox' name="Notication checkbox">
+          <label id='notifyText'>Receive notifications of comments.</label>
+          <p id='notify'>You will be sent an email when someone posts comments to your Blog or Album.</p>
+          <p id='notify-center'>Your Password will be mailed to you.</p>
+        </div> 
+
+        <div id='button'>
+          <input type='submit' value='GO' name="submit" value="Submit" onclick="ValidateEmail(document.myForm.email)">
+        </div>
+
+      </div>
+    </form>
+  </div>
+  <script src="validation.js"></script>
+</body>
+</html>
+
+

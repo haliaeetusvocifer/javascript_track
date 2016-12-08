@@ -1,0 +1,53 @@
+body {
+  font-family: "Times New Roman", sans-serif, helvetica;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  
+}
+
+#form-group {
+  padding: 10px;
+  background-color: #9ab368;
+  border-radius: 10px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-elements {
+  margin-top: 15px;
+  text-align: left;
+}
+
+#rightCountry, #leftCountry {
+  width: 200px;
+  height: 200px;
+}
+
+label {
+  text-align: left;
+  width: 120px;
+  font-size: 14px;  
+  font-weight: bold;
+  display: inline-block;  
+}
+
+input[type="text"] {
+  width: 230px;
+}
+
+.submitButton {
+  background-color: #65763A;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 0px;
+  text-align: center;
+}
+
